@@ -1,0 +1,85 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 2px solid grey;
+  padding: 7px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+/*--------------------------  Reset button  --------------------------*/
+
+#reset {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: red;
+  font-variant: small-caps;
+  font-weight: 900;
+  cursor: pointer;
+}
+#reset:hover {
+  color: darkred;
+}
+
+/*--------------------------  The table  --------------------------*/
+
+.col-1 {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.row {
+  white-space: pre-wrap;
+  border-top: 1px solid white;
+  background: #ddd;
+}
+
+.past {
+  background-color: #bbb;
+}
+
+.present {
+  background-color: #cdf;
+  border-left: 6px solid #22669999;
+}
+
+/*--------------------------  The save button  --------------------------*/
+
+.save {
+  transition: all 0.3s ease-in-out;
+  color: gray;
+  font-variant: small-caps;
+}
+.save::after {
+  content: "d";
+}
+
+.save.unsavedChanges {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.save.unsavedChanges::after {
+  content: none;
+}

@@ -49,7 +49,7 @@ $(document).ready(() => {
 
   // Attach event handler to textareas to display unsaved changes when they are made
 
-  $("textarea").on("change", event => {
+  $("textarea").on("input", event => {
     $(event.target)
       .parent()
       .next()
@@ -82,7 +82,7 @@ $(document).ready(() => {
   // Attach event handler to reset button
 
   $("#reset").click(() => {
-    localStorage.myPlans = "[]";
+    localStorage.removeItem("myPlans");
     location.reload();
   });
 });
